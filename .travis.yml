@@ -1,11 +1,9 @@
 language: julia
 
 julia:
-  - nightly
   - 1.5.1
 
 os:
-  - linux
   - osx
 
 notifications:
@@ -14,14 +12,3 @@ notifications:
 
 after_success:
   - julia --project -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
-
-jobs:
-  include:
-    - stage: "Documentation"
-      julia: 1
-      os: linux
-      script:
-        - julia --project=docs/ -e 'using Pkg; Pkg.instantiate();
-                                    Pkg.develop(PackageSpec(path=pwd()))'
-        - julia --project=docs/ docs/make.jl
-      after_success: skip
