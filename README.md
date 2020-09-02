@@ -7,9 +7,9 @@ BirkhoffDecomposition.jl is a Julia package for decomposing a doubly stochastic 
 
 ## Quick Example
 
-Now let's find a Birkhoff decomposition.
+Let us compute a Birkhoff decomposition.
 ```julia
-# Let us first make the BirkhoffDecomposition.jl module available
+# First load the BirkhoffDecomposition package
 using BirkhoffDecomposition
 
 # Generate a random doubly stochastic matrix (n is the dimension)
