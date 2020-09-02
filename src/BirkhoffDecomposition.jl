@@ -2,6 +2,7 @@ module BirkhoffDecomposition
 
     using JuMP
     using Clp
+    using Random
     using SparseArrays
 
     function __init__()
