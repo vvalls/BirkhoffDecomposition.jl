@@ -23,4 +23,3 @@ The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrice
 ``
 sum(P.*w) = P[1]*w[1] + P[2]*w[2] + ... + P[k]*w[k]
 ``
-
