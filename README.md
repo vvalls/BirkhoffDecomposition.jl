@@ -23,6 +23,3 @@ The output of ``birkdecomp(x)`` is an array ``p`` of ``n*n`` permutation matrice
 sum(P.*w) = P[1]*w[1] + P[2]*w[2] + ... + P[k]*w[k]
 ``
 
-## Documentation
-
-The detailed documentation can be found [here](https://www.google.com). This includes some application examples as well as how to tune the parameters to obtain (sparse) approximate Birkhoff decompositions.
