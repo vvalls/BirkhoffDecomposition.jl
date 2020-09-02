@@ -1,4 +1,5 @@
 language: julia
+codecov: true
 
 julia:
   - 1.5.1
@@ -7,8 +8,7 @@ os:
   - osx
 
 notifications:
-  email:
-    - vallsdev@tcd.ie
+  email: false
 
 after_success:
   - julia --project -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
