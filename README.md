@@ -19,7 +19,7 @@ X  = randomDoublyStochasticMatrix(n);
 # Find decomposition
 P, w = birkdecomp(X);
 ```
-The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrices and ``w`` a vector of weights. We can now write the doubly stochastic matrix ``x`` as
+The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrices and ``w`` a vector of weights. We can now write the doubly stochastic matrix ``X`` as
 ``
 sum(P.*w) = P[1]*w[1] + P[2]*w[2] + ... + P[k]*w[k]
 ``
