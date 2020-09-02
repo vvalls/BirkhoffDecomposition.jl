@@ -1,10 +1,7 @@
 module BirkhoffDecomposition
 
-    using MathOptInterface
     using JuMP
     using Clp
-    using Ipopt
-    using Random
     using SparseArrays
 
     function __init__()
