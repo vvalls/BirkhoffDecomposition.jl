@@ -5,6 +5,8 @@ BirkhoffDecomposition.jl is a Julia package for decomposing a doubly stochastic 
 
 **Installation**: `julia> import Pkg; Pkg.add("BirkhoffDecomposition")`
 
+If the above fails, try: `julia> import Pkg; Pkg.add("https://github.com/vvalls/BirkhoffDecomposition.jl")`
+
 ## Quick Example
 
 Let us compute a Birkhoff decomposition.
