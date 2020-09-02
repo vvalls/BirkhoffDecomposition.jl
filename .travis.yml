@@ -10,5 +10,9 @@ os:
 notifications:
   email: false
 
+env:
+   - CODECOV_TOKEN=2441edc8-0c35-4ede-b72a-09394c0d396e
+
+
 after_success:
   - julia --project -e 'import Pkg; Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
