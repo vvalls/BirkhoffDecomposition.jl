@@ -9,7 +9,6 @@ If the above fails, try: `julia> import Pkg; Pkg.add("https://github.com/vvalls/
 
 ## Quick Example
 
-Let us compute a Birkhoff decomposition.
 ```julia
 # First load the BirkhoffDecomposition package
 using BirkhoffDecomposition
@@ -18,7 +17,7 @@ using BirkhoffDecomposition
 n  = 3;             
 X  = randomDoublyStochasticMatrix(n);
 
-# Find decomposition
+# Compute decomposition
 P, w = birkdecomp(X);
 ```
 The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrices and ``w`` a vector of weights. We can now write the doubly stochastic matrix ``X`` as
