@@ -3,7 +3,7 @@
 
 BirkhoffDecomposition.jl is a Julia package for decomposing a doubly stochastic matrix as the sum of permutation matrices. 
 
-**Installation**: `julia> Pkg.add("BirkhoffDecomposition.jl")`
+**Installation**: `julia> Pkg.add("BirkhoffDecomposition")`
 
 ## Quick Example
 
