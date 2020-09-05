@@ -10,7 +10,7 @@ If the above fails, try: `julia> import Pkg; Pkg.add("https://github.com/vvalls/
 ## Quick Example
 
 ```julia
-# First load the BirkhoffDecomposition package
+# Load the package
 using BirkhoffDecomposition
 
 # Generate a random doubly stochastic matrix (n is the dimension)
