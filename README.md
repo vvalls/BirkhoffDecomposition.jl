@@ -23,7 +23,7 @@ The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrice
 
 ##  Approximate Birkhoff decomposition
 
-The command ``birkdecomp(X,ε)`` obtains an ε-approximate Birkhoff decomposition of matrix ``X``. That is, the resulting decomposition ``Y = reshape(P*w,n,n)`` ensures that the Frobenious norm of ``X-Y`` is smaller than ``ε``. 
+The command ``birkdecomp(X,ε)`` obtains an ε-approximate Birkhoff decomposition of matrix ``X``. In particular, the resulting decomposition ``Y = reshape(P*w,n,n)`` ensures that the [Frobenious norm](https://en.wikipedia.org/wiki/Matrix_norm#Frobenius_norm) of ``X-Y`` is smaller than ``ε``. 
 
 ```julia
 n  = 16; X = randomDoublyStochasticMatrix(n);
