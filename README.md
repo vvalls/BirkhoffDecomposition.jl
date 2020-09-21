@@ -30,8 +30,6 @@ n  = 16; X  = randomDoublyStochasticMatrix(n);
 ε = 1e-2;
 P, w = birkdecomp(X,ε);
 
-# Check the approximate decomposition is ε-close to X
-using LinearAlgebra
 Y = reshape(P*w,n,n);
-norm(X-Y,2) <= ε
+sqrt(sum((X-Y).^2)) <= ε; 
 ```
