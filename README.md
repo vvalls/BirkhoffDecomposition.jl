@@ -26,10 +26,7 @@ The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrice
 The command ``birkdecomp(X,ε)`` obtains an ε-approximate Birkhoff decomposition of matrix ``X``. That is, the resulting decomposition ``Y = reshape(P*w,n,n)`` satisfies  ``norm(X-Y,2) <= ε``. 
 
 ```julia
-# Load package and compute ε-approximate Birkhoff decomposition
-using BirkhoffDecomposition
-n  = 16;             
-X  = randomDoublyStochasticMatrix(n);
+# ...
 ε = 1e-2;
 P, w = birkdecomp(X,ε);
 
