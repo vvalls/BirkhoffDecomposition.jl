@@ -20,19 +20,18 @@ P, w = birkdecomp(X);
 ```
 The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrices and ``w`` a vector of weights. We can now write the doubly stochastic matrix ``X`` in vector form as ``P*w``
 
-The command ``birkdecomp(X,ε)`` obtains an ε-approximate decompositios of matrix ``X``. That is, the resulting decomposition ``Y = reshape(P*w,n,n)`` satisfies  ``norm(X-Y,2) <= ε``. 
+The command ``birkdecomp(X,ε)`` obtains an ε-approximate Birkhoff decomposition of matrix ``X``. That is, the resulting decomposition ``Y = reshape(P*w,n,n)`` satisfies  ``norm(X-Y,2) <= ε``. 
 
 ```julia
+# Load package and compute ε-approximate Birkhoff decomposition
 using BirkhoffDecomposition
 n  = 16;             
 X  = randomDoublyStochasticMatrix(n);
 ε = 1e-2;
-
-# Compute exact decomposition
 P, w = birkdecomp(X,ε);
 
-Y = reshape(P*w,n,n);
-
+# Check the approximate decomposition is ε-close to ``X``
 using LinearAlgebra
+Y = reshape(P*w,n,n);
 norm(X-Y,2) <= ε;
 ```
