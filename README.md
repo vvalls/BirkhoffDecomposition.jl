@@ -6,7 +6,7 @@
 **Installation**: `julia> import Pkg; Pkg.add("BirkhoffDecomposition")`
 
 
-## Exact Birkhoff Decomposition
+## Exact Birkhoff decomposition
 
 ```julia
 # Load the package
