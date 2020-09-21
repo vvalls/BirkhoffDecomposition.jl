@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/vvalls/BirkhoffDecomposition.jl.svg?token=wfxaqfDxVdXnz8s4hjc3&branch=master)](https://travis-ci.com/vvalls/BirkhoffDecomposition.jl)
 [![codecov](https://codecov.io/gh/vvalls/BirkhoffDecomposition.jl/branch/master/graph/badge.svg?token=L3R6JM6Q65)](https://codecov.io/gh/vvalls/BirkhoffDecomposition.jl)
 
-[BirkhoffDecomposition.jl](https://github.com/vvalls/BirkhoffDecomposition.jl) is a [Julia](https://julialang.org) package for decomposing a doubly stochastic matrix as the sum of permutation matrices. 
+[BirkhoffDecomposition.jl](https://github.com/vvalls/BirkhoffDecomposition.jl) is a [Julia](https://julialang.org) package for decomposing a [doubly stochastic matrix](https://en.wikipedia.org/wiki/Doubly_stochastic_matrix) as the sum of permutation matrices. 
 
 **Installation**: `julia> import Pkg; Pkg.add("BirkhoffDecomposition")`
 
