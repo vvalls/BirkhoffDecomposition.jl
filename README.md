@@ -20,5 +20,5 @@ P, w = birkdecomp(X);
 ```
 The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrices and ``w`` a vector of weights. We can now write the doubly stochastic matrix ``X`` in vector form as ``P*w``
 
-The command ``birkdecomp(X,ε)`` obtains an ε-approximate decompositios of matrix ``X``. That is, the resulting decomposition ``Y = reshape(P*w,n,n)`` satisfies  ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+The command ``birkdecomp(X,ε)`` obtains an ε-approximate decompositios of matrix ``X``. That is, the resulting decomposition ``Y = reshape(P*w,n,n)`` satisfies  ``norm(X-Y,2) <= ε``. 
 
