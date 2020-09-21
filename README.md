@@ -5,7 +5,7 @@ BirkhoffDecomposition.jl is a Julia package for decomposing a doubly stochastic 
 
 **Installation**: `julia> import Pkg; Pkg.add("BirkhoffDecomposition")`
 
-## Quick Example
+## Quick example
 
 ```julia
 # Load the package
@@ -19,6 +19,8 @@ X  = randomDoublyStochasticMatrix(n);
 P, w = birkdecomp(X);
 ```
 The output of ``birkdecomp(X)`` is an array ``P`` of ``n*n`` permutation matrices and ``w`` a vector of weights. We can now write the doubly stochastic matrix ``X`` in vector form as ``P*w``
+
+##  ε-approximate Birkhoff decomposition
 
 The command ``birkdecomp(X,ε)`` obtains an ε-approximate Birkhoff decomposition of matrix ``X``. That is, the resulting decomposition ``Y = reshape(P*w,n,n)`` satisfies  ``norm(X-Y,2) <= ε``. 
 
