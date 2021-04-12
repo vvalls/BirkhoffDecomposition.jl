@@ -33,3 +33,14 @@ P, w = birkdecomp(X,ε);
 Y = reshape(P*w,n,n);
 sqrt(sum((X-Y).^2)) <= ε  # Frobenius norm
 ```
+## Cite
+```
+@misc{valls2020birkhoffs,
+      title={Birkhoff's Decomposition Revisited: Sparse Scheduling for High-Speed Circuit Switches}, 
+      author={Víctor Valls and George Iosifidis and Leandros Tassiulas},
+      year={2020},
+      eprint={2011.02752},
+      archivePrefix={arXiv},
+      primaryClass={math.OC}
+}
+```
