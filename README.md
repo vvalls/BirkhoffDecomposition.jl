@@ -34,13 +34,7 @@ Y = reshape(P*w,n,n);
 sqrt(sum((X-Y).^2)) <= ε  # Frobenius norm
 ```
 ## Cite
+The algorithm implemented in the package is the ```Birkhoff+``` presented in:
 ```
-@misc{valls2020birkhoffs,
-      title={Birkhoff's Decomposition Revisited: Sparse Scheduling for High-Speed Circuit Switches}, 
-      author={Víctor Valls and George Iosifidis and Leandros Tassiulas},
-      year={2020},
-      eprint={2011.02752},
-      archivePrefix={arXiv},
-      primaryClass={math.OC}
-}
+Valls, V., Iosifidis, G. and Tassiulas, L., 2020. Birkhoff's Decomposition Revisited: Sparse Scheduling for High-Speed Circuit Switches. arXiv preprint arXiv:2011.02752.
 ```
