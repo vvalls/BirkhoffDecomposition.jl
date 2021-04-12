@@ -36,11 +36,11 @@ sqrt(sum((X-Y).^2)) <= ε  # Frobenius norm
 ## Cite
 The algorithm implemented in the package is the ```Birkhoff+``` presented in:
 
+```
 Valls, V., Iosifidis, G. and Tassiulas, L., 2020. 
-
 Birkhoff's Decomposition Revisited: Sparse Scheduling for High-Speed Circuit Switches. 
-
 arXiv preprint arXiv:2011.02752.
+```
 
 The article has been accepted for publication in IEEE/ACM Transaction on Networking (April 2021). 
 
