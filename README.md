@@ -42,5 +42,5 @@ Birkhoff's Decomposition Revisited: Sparse Scheduling for High-Speed Circuit Swi
 arXiv preprint arXiv:2011.02752.
 ```
 
-The article has been accepted for publication in IEEE/ACM Transaction on Networking (April 2021). 
+The article has been accepted for publication in IEEE/ACM Transactions on Networking (April 2021). 
 
