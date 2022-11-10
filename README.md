@@ -42,5 +42,10 @@ Birkhoff's Decomposition Revisited: Sparse Scheduling for High-Speed Circuit Swi
 arXiv preprint arXiv:2011.02752.
 ```
 
-The article has been accepted for publication in IEEE/ACM Transactions on Networking (April 2021). 
+# Cite
 
+Valls, V., Iosifidis, G. and Tassiulas, L., 2021. Birkhoff’s Decomposition Revisited: Sparse Scheduling for High-Speed Circuit Switches. IEEE/ACM Transactions on Networking, 29(6), pp.2399-2412.
+
+# Acknowledgements
+
+This work has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 795244.
