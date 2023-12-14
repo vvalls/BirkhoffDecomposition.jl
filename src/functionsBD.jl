@@ -19,7 +19,6 @@ function randomDoublyStochasticMatrix(n; num_perm = n^2)
 
     M = zeros(n,n)
     α = rand(num_perm)
-
     α = α / sum(α)
 
     for i=1:num_perm
@@ -29,9 +28,27 @@ function randomDoublyStochasticMatrix(n; num_perm = n^2)
         end
     end
 
-    return M;
+    return M
 end
 
+function randomPermutations(n; num_perm = n^2)
+
+    M = zeros(n,n)
+    α = rand(num_perm)
+    permutations = zeros(n,num_perm); 
+
+    α = α / sum(α)
+
+    for i=1:num_perm
+        perm = randperm(n)
+        permutations[:,i] = perm
+        for j=1:n
+            M[perm[j],j] += α[i]
+        end
+    end
+
+    return M, permutations, α
+end
 
 function birkhoffPolytope(n)
 
