@@ -15,18 +15,17 @@ function LP(c,P)
 
 end
 
-
 function randomDoublyStochasticMatrix(n; num_perm = n^2)
 
-    M = zeros(n,n);
+    M = zeros(n,n)
     α = rand(num_perm)
 
-    α = α / sum(α);
+    α = α / sum(α)
 
     for i=1:num_perm
-        perm = randperm(n);
+        perm = randperm(n)
         for j=1:n
-            M[perm[j],j] += α[i];
+            M[perm[j],j] += α[i]
         end
     end
 

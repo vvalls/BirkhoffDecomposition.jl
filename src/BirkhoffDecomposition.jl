@@ -17,4 +17,4 @@ module BirkhoffDecomposition
     export randomDoublyStochasticMatrix
     export birkdecomp
 
-end # module
+end
