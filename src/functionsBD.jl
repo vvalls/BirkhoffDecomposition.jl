@@ -49,8 +49,10 @@ function birkhoffPolytope(n)
     A = sparse(M');
     b = ones(2*n);
 
-    model = Model(with_optimizer(Clp.Optimizer))
-    set_silent(model)
+    model = Model(HiGHS.Optimizer)
+    set_optimizer_attribute(model, "solver", "simplex")
+    set_optimizer_attribute(model, "output_flag", false)
+    #set_silent(model)
     @variable(model, 0 <= x[1:n*n] <= 1)
     @constraint(model, A * x .== b)
 

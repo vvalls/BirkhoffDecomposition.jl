@@ -1,7 +1,7 @@
 module BirkhoffDecomposition
 
     using JuMP
-    using Clp
+    using HiGHS
     using Random
     using SparseArrays
 
