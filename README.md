@@ -13,7 +13,7 @@
 using BirkhoffDecomposition
 
 # Generate a random doubly stochastic matrix (n is the dimension)
-n  = 3;             
+n  = 3             
 X  = randomDoublyStochasticMatrix(n);
 
 # Compute exact decomposition
