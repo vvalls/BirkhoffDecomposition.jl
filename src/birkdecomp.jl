@@ -22,11 +22,11 @@ function birkdecomp(X, ε=1e-12; max_rep = 1)
         θ[i] = θi;
 
         approx = sqrt(sum((abs.(x_star-x)).^2));
-        extreme_points[:,i] = y;
+        extreme_points[:,i] = abs.(y);
         i = i + 1;
 
     end
 
-    return extreme_points[:,1:i-1], θ[1:i-1]
+    return Int16.(extreme_points[:,1:i-1]), θ[1:i-1]
 
 end
