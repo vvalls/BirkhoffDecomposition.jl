@@ -18,10 +18,10 @@ function birkdecomp(X, ε=1e-12; max_rep = 1)
 
         y = getEPBplus(x_star, x, B, max_rep, ε)
         θi = getBirkhoffStepSize(x_star,x,y)
-        x = x + θi*y;
+        x = x .+ θi.*y;
         θ[i] = θi;
 
-        approx = sqrt(sum((abs.(x_star-x)).^2));
+        approx = sqrt(sum((abs.(x_star.-x)).^2));
         extreme_points[:,i] = abs.(y);
         i = i + 1;
 
