@@ -1,7 +1,7 @@
 name = "BirkhoffDecomposition"
 uuid = "7095a2e3-0a7f-4f3b-b61c-705d32c2f8a5"
 authors = ["Victor Valls <42036246+vvalls@users.noreply.github.com>"]
-version = "0.2.3"
+version = "0.2.4"
 
 [deps]
 HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
