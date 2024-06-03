@@ -21,7 +21,8 @@ function getEPBplus(x_star, x, B, max_rep, ε)
         end
 
         α_iter = getBirkhoffStepSize(x_star, x, y_iter);
-        if(α < α_iter)
+
+        if(α < α_iter && (y_iter'*(x_star.> 0) >= sqrt(d)))
             α = α_iter;
             y = y_iter;
         else

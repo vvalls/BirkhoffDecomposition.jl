@@ -35,7 +35,7 @@ function randomPermutations(n; num_perm = n^2)
 
     M = zeros(n,n)
     α = rand(num_perm)
-    permutations = zeros(n,num_perm); 
+    permutations = zeros(n,num_perm);
 
     α = α / sum(α)
 
@@ -62,7 +62,7 @@ function birkhoffPolytope(n)
         end
     end
 
-    A = sparse(M');
+    A = M';
     b = ones(2*n);
 
     model = Model(HiGHS.Optimizer)
