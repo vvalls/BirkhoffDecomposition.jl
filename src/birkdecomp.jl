@@ -13,6 +13,8 @@ function birkdecomp(X, ε=1e-12; max_rep = 1)
     approx = Inf;                                   # approximation error
     i = 1;                                          # iteration index
 
+    log_approx = zeros(max_iter)
+
     # Algorithms
     while(approx > ε)
 
@@ -22,11 +24,12 @@ function birkdecomp(X, ε=1e-12; max_rep = 1)
         θ[i] = θi;
 
         approx = sqrt(sum((abs.(x_star.-x)).^2));
+        log_approx[i] = approx
         extreme_points[:,i] = abs.(y);
         i = i + 1;
-
+        
     end
 
-    return Int16.(extreme_points[:,1:i-1]), θ[1:i-1]
+    return Int16.(extreme_points[:,1:i-1]), θ[1:i-1], log_approx
 
 end
